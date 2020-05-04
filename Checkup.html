@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Self Checkup</title>
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/custom/style.css">
+	<script src="assets/jquery/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-header">
+				Self Checkup COVID-19
+			</div>
+			<div class="card-body">
+				<form name="formInput" action="#">
+					<div class="row">
+						<div class="col-md-9">
+							<label>Apakah sekarang anda merasakan demam <=30 C?</label>
+						</div>
+						<div class="col-md-3">
+							<label class="radio-inline">
+								<input type="radio" id="demam" name="demam" value="50">
+								Ya
+							</label>
+							<label class="radio-inline">
+								<input type="radio" id="demam" name="demam" value="0">
+								Tidak
+							</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-9">
+							<label>Apakah anda sering mengalami batuk kering?</label>
+						</div>
+						<div class="col-md-3">
+							<label class="radio-inline">
+								<input type="radio" id="batuk" name="batuk" value="30">
+								Ya
+							</label>
+							<label class="radio-inline">
+								<input type="radio" id="batuk" name="batuk" value="0">
+								Tidak
+							</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-9">
+							<label>Apakah tenggorokan anda terasa sakit?</label>
+						</div>
+						<div class="col-md-3">
+							<label class="radio-inline">
+								<input type="radio" id="tenggorokan" name="tenggorokan" value="20">
+								Ya
+							</label>
+							<label class="radio-inline">
+								<input type="radio" id="tenggorokan" name="tenggorokan" value="0">
+								Tidak
+							</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-9">
+							<label>Apakah anda merasa lemas seharian?</label>
+						</div>
+						<div class="col-md-3">
+							<label class="radio-inline">
+								<input type="radio" id="lemas" name="lemas" value="20">
+								Ya
+							</label>
+							<label class="radio-inline">
+								<input type="radio" id="lemas" name="lemas" value="0">
+								Tidak
+							</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-9">
+							<label>Apakah anda merasakan sakt kepala?</label>
+						</div>
+						<div class="col-md-3">
+							<label class="radio-inline">
+								<input type="radio" id="kepala" name="kepala" value="20">
+								Ya
+							</label>
+							<label class="radio-inline">
+								<input type="radio" id="kepala" name="kepala" value="0">
+								Tidak
+							</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-9">
+							<label>Apakah anda sering merasa sesak nafas?</label>
+						</div>
+						<div class="col-md-3">
+							<label class="radio-inline">
+								<input type="radio" id="sesak" name="sesak" value="30">
+								Ya
+							</label>
+							<label class="radio-inline">
+								<input type="radio" id="sesak" name="sesak" value="0">
+								Tidak
+							</label>
+						</div>
+					</div>
+					<a type="button" class="btn btn-button" onclick='check()' data-toggle="modal" data-target="#result">Cek Sekarang</a>
+				</form>	
+			</div>
+		</div>
+
+		<div class="modal fade" id="result" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalLabel">Hasil Cek</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h4 id="hasil"></h4>
+						<p id="hasils"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="assets/custom/check.js"></script>
+	<script src="assets/jquery/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+	color: #000;
+	background-color: #fff;
+	padding-top: 30px;
+}
+
+.card {
+	border-color: #0069d9;
+}
+
+.card-header {
+	background-color: #0069d9;
+	color: #fff !important;
+	font-weight: bold;
+}
+
+.btn-button {
+	color: #fff !important;
+	width: 100%;
+	background-color: #0069d9;
+	font-weight: bold;
+}
+
+.radio-inline {
+	margin-right: 11vh;
+}
+
+.modal-header {
+	font-size: 18px;
+	color: #fff !important;
+	background-color: #0069d9;
+}
